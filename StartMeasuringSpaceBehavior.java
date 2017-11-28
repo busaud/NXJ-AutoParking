@@ -7,7 +7,7 @@ public class StartMeasuringSpaceBehavior implements Behavior{
 	@Override
 	public boolean takeControl() {
 		// TODO Auto-generated method stub
-		return Motor.C.isMoving() && !Attributes.isMeasuring && Attributes.ultrasonicSensor.getDistance() > Attributes.DISTANCE_CAR_ROBOT;
+		return !Attributes.parked && Motor.C.isMoving() && !Attributes.isMeasuring && Attributes.ultrasonicSensor.getDistance() > Attributes.DISTANCE_CAR_ROBOT;
 	}
 
 	@Override

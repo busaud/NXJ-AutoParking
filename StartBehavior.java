@@ -7,7 +7,7 @@ public class StartBehavior implements Behavior{
 	@Override
 	public boolean takeControl() {
 		// TODO Auto-generated method stub
-		return !Attributes.parked && !Motor.C.isMoving() && Attributes.soundSensor.readValue() > Attributes.CLAP_SOUND;
+		return !Attributes.parked && !Motor.C.isMoving();
 	}
 
 	@Override

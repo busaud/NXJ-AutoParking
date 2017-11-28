@@ -15,7 +15,7 @@ public class Driver {
 		Behavior left = new RevearseLeftBehavior();
 		Behavior setPosistion = new SetPositionBehavior();
 		
-		arb = new Arbitrator(new Behavior[]{parking, stopMeasuring, startMeasuring, left, right, start, setPosistion});
+		arb = new Arbitrator(new Behavior[]{parking, stopMeasuring, startMeasuring,start, left, right, setPosistion});
 		arb.start();
 		
 	}
