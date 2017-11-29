@@ -8,6 +8,7 @@ public class Attributes {
 	public static boolean firstStep = true;
 	public static boolean parked = false;
 	public static boolean finalStep = false;
+	public static double totalTachoCount = 0;
 	//public static SoundSensor soundSensor = new SoundSensor(SensorPort.S3);
 	public static UltrasonicSensor ultrasonicSensor = new UltrasonicSensor(SensorPort.S4);
 	
