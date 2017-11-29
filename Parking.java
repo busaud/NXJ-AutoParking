@@ -14,6 +14,7 @@ public class Parking implements Behavior{
 	@Override
 	public void action() {
 		// TODO Auto-generated method stub
+		Attributes.totalTachoCount += Motor.C.getTachoCount();
 		LCD.clear();
 		LCD.drawString("Parking", 1, 1);
 		Delay.msDelay(100);
