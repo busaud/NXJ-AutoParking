@@ -15,7 +15,7 @@ public class StartMeasuringSpaceBehavior implements Behavior{
 		// TODO Auto-generated method stub
 		LCD.clear();
 		LCD.drawString("Starting Measuring ", 1, 1);
-
+		Attributes.totalTachoCount += Motor.C.getTachoCount();
 		Attributes.isMeasuring = true;
 		Motor.C.resetTachoCount();
 		Motor.C.forward();
